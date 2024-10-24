@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfect World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css?v=3.5">
+    <link rel="icon" href="/img/favicon.png" type="image/png">
+</head>
+<body>
+    
+<!-- Navbar Section -->
+<header>
+    <nav>
+        <div class="nav-bar-wrapper">
+            <ul class="nav-bar">
+                <div class="left-container"> <!-- Kontainer untuk logo dan menu -->
+                    <li class="logo-brand">
+                        <a href="http://pwexe.id/"><img src="img/logo_pw.png" alt="PW Logo"></a>
+                    </li>
+                    <input type="checkbox" id="check" />
+                    <span class="menu">
+                        <li><a href="#" id="menu-news">Berita</a></li>
+                        <li><a href="/download.html" id="menu-download">Download</a></li>
+                        <li class="always-active"><a href="/about.html" id="menu-about">Tentang Server</a></li>
+                        <li><a href="#" id="menu-support">Bantuan</a></li>
+                        <li>
+                            <button class="btn dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img id="currentFlag" src="/img/flag_id.png" alt="ID" class="me-1"> <span id="currentLanguage">ID</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <li class="nav-item no-icon">
+                                    <a class="dropdown-item" onclick="setLanguage('id')">
+                                        <img src="/img/flag_id.png" alt="ID" class="me-1"> Indonesia
+                                    </a>
+                                </li>
+                                <li class="nav-item no-icon">
+                                    <a class="dropdown-item" onclick="setLanguage('en')">
+                                        <img src="/img/flag_en.png" alt="EN" class="me-1"> English
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <!-- Tombol Register dan Login di dalam menu mobile -->
+                        <li class="mobile-auth-buttons no-icon ">
+                            <a href="https://panel.pwexe.id/login" class="login-btn-mob"><img src="/img/icon_lock.png" alt="Lock Icon"><span id="login-btn-mob">MASUK</span></a>
+                        </li>
+                        <li class="mobile-auth-buttons no-icon">
+                            <a href="https://panel.pwexe.id/register" class="register-btn-mob" id="register-btn-mob">DAFTAR</a>
+                        </li>
+                        <!-- Icon close hanya muncul ketika menu dibuka -->
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </span>
+                    
+                    <!-- Icon open hanya muncul ketika menu ditutup -->
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                </div>
+
+                <span class="desktop-auth-buttons"> <!-- Kontainer untuk tombol -->
+                    <a href="https://panel.pwexe.id/login" class="login-btn-desk"><img src="/img/icon_lock.png" alt="Lock Icon"><span id="login-btn-desk">MASUK</span></a>
+                    <a href="https://panel.pwexe.id/register" id="register-btn-desk" class="register-btn-desk">DAFTAR</a>
+                </span>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="about-container-besar">
+<div class="about-container">
+    <div class="character-display">
+        <img id="fullCharacter" src="/img/krk1.webp" alt="Full Character" class="full-character">
+        <div class="character-description">
+            <h2 id="characterName">Mage</h2>
+            <p id="characterHometown"><span class="desc-title">Kota Kelahiran: </span>Kota Pedang</p>
+            <p id="characterType"><span class="desc-title">Tipe: </span>Magic</p>
+            <p id="characterAttribute"><span class="desc-title">Atribut Utama: </span>Intelligence</p>
+            <p id="characterElements"><span class="desc-title">Elemen: </span>Earth, Fire, Water</p>
+            <p id="characterWeapons"><span class="desc-title">Senjata: </span>Flag, Mystic Sword, Wheel, Wand</p>
+            <p id="characterArmor"><span class="desc-title">Armor: </span>Mystic Armor</p>
+            <p id="characterDescription"><span class="desc-title">Karakteristik Khusus: </span>Mage. Mengkhususkan diri dalam mantra kerusakan berat. Ini menggunakan unsur-unsur alam: api,
+                air dan tanah. Damage dapat ditangani dalam berbagai bentuk sesuai dengan elemen yang dipilih dan memiliki damage terkuat dalam game.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<section class="thumbnail-container">
+    <!-- Thumbnail section -->
+    <div class="character-thumbnails">
+        <img src="/img/krk1-t.webp" alt="Jian Ling" onclick="updateCharacter(
+            '/img/krk1.webp', 
+            'Mage', 
+            'Kota Pedang', 
+            'Magic', 
+            'Strength', 
+            'Metal', 
+            'Flag, Mystic Sword, Wheel, Wand', 
+            'Mystic Armor', 
+            'Mage. Mengkhususkan diri dalam mantra kerusakan berat. Ini menggunakan unsur-unsur alam: api, air dan tanah. Damage dapat ditangani dalam berbagai bentuk sesuai dengan elemen yang dipilih dan memiliki damage terkuat dalam game.'
+        )" class="thumbnail">
+        
+        <img src="/img/krk2-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            '/img/krk2.webp', 
+            'Mystic', 
+            'Kota Tellus', 
+            'Magic', 
+            'Intelligence', 
+            'Wood, Metal (summon), Fire (summon)', 
+            'Wheel, Flag, Mystic Sword, Wand', 
+            'Mystic Armor', 
+            'Kelas sihir yang memberimu banyak keterampilan yang merusak kayu beserta keterampilan penyembuhan untuk membantumu dan sekutumu. Mystics akan secara bertahap mendapatkan tanaman untuk membantumu dalam pertempuran saat kamu naik level. Setiap tanaman digunakan untuk tujuan yang unik, seperti memberikan kerusakan, debuff AoE, menyembuhkan rekan setim, dan bahkan lebih banyak pilihan saat membuka Glyph.'
+        )" class="thumbnail">
+
+        <img src="/img/krk3-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            '/img/krk3.webp', 
+            'Seeker', 
+            'Kota Tellus', 
+            'Physical', 
+            'Strength', 
+            'Metal', 
+            'Blade, Dual Blades, Dual Swords, Sword', 
+            'Heavy Armor', 
+            'Membawa peninggalan di dahi mereka. Seeker memfokuskan energi Ibu Bumi melalui bentuk pedang fana untuk menjadi petarung serbaguna. Ini memungkinkan dia untuk menyerang dari jarak pendek dan menengah. Jian Ling juga dapat menggunakan Bladesongs dan Bladesight untuk meningkatkan kemampuannya dan menyebabkan efek status khusus pada musuh. Dan tank sekunder yang mereka unggulkan dalam pertempuran efek area yang luas.'
+        )" class="thumbnail">
+
+        <img src="/img/krk4-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            '/img/krk4.webp', 
+            'Physic', 
+            'Kota Samudra', 
+            'Magic', 
+            'Intelligence', 
+            'Earth, Water', 
+            'Talisman', 
+            'Mystic Armor', 
+            'Dapat berubah menjadi bentuk Duyung. Physic dukun, adalah kelas Tideborne kuno. Mereka tidak lagi mengejar penguasaan elemen, tetapi sekarang memanipulasi esensi naluri makhluk. Mereka memanifestasikan keinginan mereka melalui Roh untuk meningkatkan diri mereka sendiri dan sekutu mereka sambil menyakiti musuh mereka dan memiliki kekuatan untuk memanggil.'
+        )" class="thumbnail">
+
+        <img src="/img/krk5-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            '/img/krk5.webp', 
+            'Warrior', 
+            'Kota Pedang', 
+            'Physical', 
+            'Strength', 
+            'None', 
+            'Blade, Dual Axes, Dual Swords, Dual Blades, Bladed Fist, Iron Fist, Polearm, Spear, Sword', 
+            'Heavy Armor', 
+            'Menggunakan berbagai senjata. Warior,Lambang penguasaan senjata. Memberikan kerusakan fisik terus menerus dengan menukar berbagai senjata. Mereka juga pandai memukau dan melemahkan mangsanya dan memiliki tubuh yang kuat untuk mengatasi kerusakan.'
+        )" class="thumbnail">
+
+        <img src="/img/krk6-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            '/img/krk6.webp', 
+            'Archer', 
+            'Kota Peri', 
+            'Ranged Physical', 
+            'Dexterity', 
+            'Metal ', 
+            'Bow, Crossbow, Slingshot', 
+            'Light Armor', 
+            'Bisa terbang sejak lahir. Memberikan kerusakan jarak jauh yang berat pada jarak maksimum. Archer Pemanah, adalah perwujudan angin, armada kaki, dan tangan yang pasti. Sebagai penjaga Wingkin, dia adalah pemanah yang luar biasa dan pejuang pemberani. Indranya diasah hingga tajam, memungkinkannya untuk menyerang lawan dari jarak jauh dan menyebabkan efek melemahkan untuk menghambat kemajuan mereka.'
+        )" class="thumbnail">
+
+        <img src="/img/krk7-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            '/img/krk7.webp', 
+            'Assasin', 
+            'Kota Samudra', 
+            'Physical', 
+            'Dexterity', 
+            'None', 
+            'Daggers', 
+            'Light Armor', 
+            'Dapat berubah menjadi bentuk air. Serangan dari bayang-bayang, belati di belakang, dan mundur diam-diam adalah merek dagang dari Assasin. Orang-orang seperti itu bukanlah petarung jarak dekat yang kasar, tetapi ahli kemahiran. Mereka lebih suka mengandalkan kelincahan daripada baju besi besar. Selain akurasinya yang tepat, Xi Shou menggunakan siluman alami untuk keuntungannya. Sebagian besar korbannya tidak memperhatikannya sampai mereka menghembuskan napas terakhir.'
+        )" class="thumbnail">
+
+        <img src="/img/krk8-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            '/img/krk8.webp', 
+            'Foxlady', 
+            'Kota Siluman', 
+            'Magic', 
+            'Intelligence', 
+            'Wood', 
+            'Flag, Mystic Sword, Wheel, Wand', 
+            'Mystic Armor', 
+            'Seorang ahli sihir Kayu, dia dapat memanggil serangga dan wabah, menggunakan racun dan kutukan, dan berubah menjadi rubah atau binatang jinak.'
+        )" class="thumbnail">
+
+        <img src="/img/krk9-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            '/img/krk9.webp', 
+            'Bestial',
+            'Kota Siluman', 
+            'Physical', 
+            'Strength', 
+            'Fire', 
+            'Dual Axes, Dual Hammers, Poleaxe, Polehammer', 
+            'Heavy Armor', 
+            'Bestial adalah karakter tank yang dapat menahan kerusakan tinggi, menggabungkan kekuatan dan ketahanan binatang buas, dan memiliki kecerdasan dan perhitungan manusia. Ketika kekuatan binatang terbangun, mereka dapat berubah menjadi harimau putih atau panda, meningkatkan kekuatan dan kecepatan mereka.'
+        )" class="thumbnail">
+
+        <img src="/img/krk10-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            '/img/krk10.webp', 
+            'Priest', 
+            'Kota Siluman', 
+            'Magic', 
+            'Intelligence', 
+            'Metal', 
+            'Flag, Mystic Sword, Wheel, Wand', 
+            'Mystic Armor', 
+            'Bisa terbang sejak lahir, Tabib utama. Priest, Orang Bijak. Sebagai master seni Penyembuhan dan Berkah, Yu Ling sangat penting bagi pesta mana pun. Penguasaannya atas sihir Metal juga menghasilkan kekuatan penghancur yang dapat menyaingi Surga.'
+        )" class="thumbnail">
+
+        <!-- Tambahkan lebih banyak thumbnail jika diperlukan -->
+    </div>
+</section>
+
+<section class="description-section">
+    <div class="description-wrapper">
+        <div class="content-section">
+            <h2>Tentang Server Kami</h2>
+            <p>Server ini adalah representasi klasik sejati dari era emas Perfect World. Di sini, kamu akan merasakan kembali suasana nostalgia, tanpa harus bermain seperti pekerjaan karena tugas harian yang melelahkan, balapan abadi untuk mendapatkan peralatan baru, atau pembaruan global yang terus-menerus.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Informasi Dasar</h2>
+            <ul>
+                <li><strong>Versi:</strong> 1.4.6</li>
+                <li><strong>Jumlah Ras:</strong> 8 ras dan 10 kelas</li>
+                <li><strong>Rates:</strong> x1</li>
+                <li><strong>Level Maksimal:</strong> 105</li>
+                <li><strong>Peralatan Akhir:</strong> Twilight Temple, Moon Valley, dan peralatan Ranked</li>
+            </ul>
+        </div>
+        
+        <div class="content-section">
+            <h2>Fitur Game</h2>
+            <ul>
+                <li>Kemiripan maksimal dengan versi klasik resmi dengan konsep hardcore.</li>
+                <li>Server bersifat internasional, dengan pemain dari seluruh dunia.</li>
+                <li>Ekonomi yang matang dan donasi minimum: peralatan, bola naga, dan item lain yang memengaruhi keseimbangan permainan tidak dijual di toko.</li>
+                <li>Barang konsumsi dari toko bisa didapatkan dari pedagang dalam game.</li>
+                <li>Pengumpulan peralatan bertahap dan leveling yang halus.</li>
+                <li>Event dan dungeon yang seimbang.</li>
+                <li>Permainan tim.</li>
+                <li>Pengembangan unik, event khusus, dan sistem anti-cheat.</li>
+                <li>Database PWCATS, Kotomania gratis (unduh klien), dan Offline Cats berfungsi.</li>
+                <li>Peningkatan pada sistem lelang dalam game.</li>
+                <li>Pembaruan pada perolehan reputasi dan peralatan Ranked.</li>
+                <li>Fungsi tambahan di pengaturan klien untuk kemudahan bermain.</li>
+                <li>Semua jenis form untuk crafting peralatan tersedia.</li>
+                <li>Notifikasi dari world boss.</li>
+                <li>Tidak ada mekanisme penguncian.</li>
+                <li>Pembaruan nilai tukar untuk tanda quest Pencarian Naga.</li>
+                <li>Perbaikan hadiah untuk quest informasi Soulless.</li>
+                <li>Tambahan penukaran batu jasper di Tukang Permata.</li>
+                <li>Quest dan penukaran baru dari Tetua Bijak (523,654).</li>
+                <li>Quest mingguan tersedia untuk karakter level 101 ke atas.</li>
+                <li>Dibutuhkan 2+ karakter untuk membuka dungeon mode grup.</li>
+                <li>Pembaruan crafting peralatan di City of Frost dan Sacred Moon Valley.</li>
+                <li>Penambahan kemampuan crafting hingga level 10.</li>
+                <li>Penambahan peralatan crafting level 12 di Blacksmith, Tailor, dan Craftsman.</li>
+                <li>Biaya perbaikan senjata level tinggi meningkat.</li>
+                <li>Penambahan penghitung quest yang diselesaikan dan waktu aktivasi ke statistik karakter.</li>
+                <li>Pengiriman surat instan.</li>
+            </ul>
+        </div>
+        <!-- Add more sections as needed for each part of the content -->
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="site-footer"> 
+    <div class="scroll-up-container">
+            <button class="scroll-up-btn" onclick="scrollToTop()">
+                <img src="/img/btn_top.png" alt="Scroll to Top">
+            </button>
+    </div>
+    <nav class="footer-menu">
+        <ul class="menu-footer">
+            <li class="no-icon"><a href="http://pwexe.id/" id="footer-home">Beranda</a></li>
+            <li><a href="/download.html" id="footer-download">Download</a></li>
+            <li><a href="https://panel.pwexe.id/register" id="footer-register">Pendaftaran</a></li>
+            <li class="always-active"><a href="/about.html" id="footer-about">Tentang Server</a></li>
+            <li><a href="#" id="footer-support">Bantuan</a></li>
+            </ul>
+        </nav>
+    <div class="footer-copyright">
+        <div class="copyright-info">
+            <div class="age-rating">
+                <span>16</span>
+            </div>
+            <div class="copyright-text">
+                <p id="footer-copyright">Copyright © 2024 Perfect World EXE</p>
+                <p id="footer-info">Website ini dibuat untuk tujuan informasi. Semua hak dimiliki oleh pemiliknya masing-masing.</p>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+<!-- Last Footer -->
+<footer class="last-footer">
+    <div class="footer-bottom">
+        <nav>
+            <ul class="footer-last">
+                <li class="no-icon"><a href="#user-agreement" id="footer-user">Perjanjian Pengguna</a></li>
+                <li><a href="#privacy-policy" id="footer-privacy">Kebijakan Privasi</a></li>
+                <li>
+                    <a href="https://www.instagram.com/pwexe.id" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@pwexe.id" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://discord.gg/pwexe" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                </li>
+                </ul>
+            </nav>
+        <div class="footer-copy"></div>
+    </div>
+</footer>
+
+<!-- Javascript -->
+<script src="js/script.js?v=2.2"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> <!--Language-->
+</body>
+</html>

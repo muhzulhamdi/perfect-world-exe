@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfect World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css?v=3.5">
+    <link rel="icon" href="/img/favicon.png" type="image/png">
+</head>
+<body>
+
+    
+<!-- Navbar Section -->
+<header>
+    <nav>
+        <div class="nav-bar-wrapper">
+            <ul class="nav-bar">
+                <div class="left-container"> <!-- Kontainer untuk logo dan menu -->
+                    <li class="logo-brand">
+                        <a href="http://pwexe.id/"><img src="img/logo_pw.png" alt="PW Logo"></a>
+                    </li>
+                    <input type="checkbox" id="check" />
+                    <span class="menu">
+                        <li><a href="#" id="menu-news">Berita</a></li>
+                        <li class="always-active"><a href="/download.html" id="menu-download">Download</a></li>
+                        <li><a href="/about.html" id="menu-about">Tentang Server</a></li>
+                        <li><a href="#" id="menu-support">Bantuan</a></li>
+                        <li>
+                            <button class="btn dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img id="currentFlag" src="/img/flag_id.png" alt="ID" class="me-1"> <span id="currentLanguage">ID</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <li class="nav-item no-icon">
+                                    <a class="dropdown-item" onclick="setLanguage('id')">
+                                        <img src="/img/flag_id.png" alt="ID" class="me-1"> Indonesia
+                                    </a>
+                                </li>
+                                <li class="nav-item no-icon">
+                                    <a class="dropdown-item" onclick="setLanguage('en')">
+                                        <img src="/img/flag_en.png" alt="EN" class="me-1"> English
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <!-- Tombol Register dan Login di dalam menu mobile -->
+                        <li class="mobile-auth-buttons no-icon ">
+                            <a href="https://panel.pwexe.id/login" class="login-btn-mob"><img src="/img/icon_lock.png" alt="Lock Icon"><span id="login-btn-mob">MASUK</span></a>
+                        </li>
+                        <li class="mobile-auth-buttons no-icon">
+                            <a href="https://panel.pwexe.id/register" class="register-btn-mob" id="register-btn-mob">DAFTAR</a>
+                        </li>
+                        <!-- Icon close hanya muncul ketika menu dibuka -->
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </span>
+                    
+                    <!-- Icon open hanya muncul ketika menu ditutup -->
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                </div>
+
+                <span class="desktop-auth-buttons"> <!-- Kontainer untuk tombol -->
+                    <a href="https://panel.pwexe.id/login" class="login-btn-desk"><img src="/img/icon_lock.png" alt="Lock Icon"><span id="login-btn-desk">MASUK</span></a>
+                    <a href="https://panel.pwexe.id/register" id="register-btn-desk" class="register-btn-desk">DAFTAR</a>
+                </span>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="banner-container-kecil">
+    <div class="logo-karakter-kecil">
+        <div class="logo-karakter">
+            <img src="/img/karakter_banner2.png" alt="Logo" class="karakter-kecil1">
+            <img src="/img/karakter_banner1.png" alt="Character" class="karakter-kecil2">
+        </div>
+    </div>
+</section>
+
+<section class="tab-container">
+    <div class="tab-wrapper">
+        <ul class="tab-menu">
+            <li class="tab-item active" data-tab="client">CLIENT</li>
+            <li class="tab-item" data-tab="patch">PATCH</li>
+        </ul>
+    </div>
+</section>
+
+<section class="download-container">
+    <div class="content-wrapper">
+        <div class="tab-content">
+            <div class="tab-pane active" id="client">
+                <h1 id="howToStartGameTitle" class="guide-title">CARA MEMULAI GAME</h1>
+                <p id="guideSubtitle" class="guide-subtitle">Panduan lengkap 4 langkah untuk memulai game Perfect World EXE.</p>
+                    
+                    <!-- Step #1: Register Account -->
+                    <div class="step-container">
+                        <h2 id="step1Title" class="step-title">01. REGISTRASI AKUN</h2>
+                        <p id="step1Description" class="step-description">Untuk dapat bermain, Anda harus terlebih dahulu mendaftarkan akun game.</p>
+                        <a href="https://panel.pwexe.id/register" target="_blank" id="createAccountLink" class="create-account">BUAT AKUN</a>
+                    </div>
+
+                    <!-- Step #2: Download Game -->
+                    <div class="step-container">
+                        <h2 id="step2Title" class="step-title">02. DOWNLOAD GAME</h2>
+                        <div class="download-info">
+                            <div class="download-content">
+                                <div class="download-details">
+                                    <h2 id="clientTitle">FULL CLIENT PWEXE</h2>
+                                    <p><span class="desc-download" id="fileSize">Ukuran File:</span> 10.7 GB</p>
+                                    <p><span class="desc-download" id="lastUpdate">Update Terakhir:</span> 12 Oktober 2024</p>
+                                    <p id="downloadInfo" class="desc-download">Pilih salah satu Link Dibawah ini</p>
+                                </div>
+                                <div class="download-buttons">
+                                    <a href="https://drive.google.com/file/d/1IapJTIkL9Nf469CFF7JwgicPkF21LkEa/view?usp=sharing" class="btn-download" target="_blank">Google Drive</a>
+                                    <a href="http://fullclient.pwexe.id/PWEXE.rar" class="btn-download" id="directDownload">Download Langsung</a>
+                                    <a href="#" class="btn-download" target="_blank">Media Fire</a>
+                                </div>
+                            </div>
+                            <div class="download-character">
+                                <img src="/img/karakter.png" alt="Karakter">
+                            </div>
+                        </div>
+                        
+                        <div class="system-requirements">
+                            <h2 id="systemTitle" class="system-title">PERSYARATAN SISTEM</h2>
+                            <div class="requirements-container">
+                                <!-- Minimum Requirements -->
+                                <div class="requirements-box">
+                                    <h3 id="minimumTitle">Minimum</h3>
+                                    <ul id="minimumRequirements">
+                                        <li><span class="desc-sistem" id="OS">Sistem Operasi:</span> Windows XP/7</li>
+                                        <li><span class="desc-sistem">CPU:</span> 1.6 GHz</li>
+                                        <li><span class="desc-sistem">RAM:</span> 2 GB</li>
+                                        <li><span class="desc-sistem" id="videoCard">Kartu Grafis:</span> 256 Mb</li>
+                                        <li><span class="desc-sistem" id="HDD">Ruang Hard Disk:</span> 10 GB</li>
+                                    </ul>
+                                </div>
+                        
+                                <!-- Recommended Requirements -->
+                                <div class="requirements-box">
+                                    <h3 id="recommendedTitle">Direkomendasikan</h3>
+                                    <ul id="recommendedRequirements">
+                                        <li><span class="desc-sistem" id="OS">Sistem Operasi:</span> Windows 7, 8, 10, 11</li>
+                                        <li><span class="desc-sistem">CPU:</span> 2.5 GHz</li>
+                                        <li><span class="desc-sistem">RAM:</span> 4 GB</li>
+                                        <li><span class="desc-sistem" id="videoCard">Kartu Grafis:</span> 512 Mb</li>
+                                        <li><span class="desc-sistem" id="HDD">Ruang Hard Disk:</span> 11 GB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step #3: Installing Game -->
+                    <div class="step-container">
+                        <h2 id="step3Title" class="step-title">03. INSTALASI GAME</h2>
+                        <p id="step3Description1" class="step-description">Instal client game di komputer Anda di lokasi yang diinginkan. Tentukan folder tempat Anda menginstal atau mengekstrak arsip, serta beri nama folder tersebut. Jika client didownload dalam bentuk arsip, gunakan WinRAR atau 7zip untuk mengekstrak file.</p>
+                        <div class="patch-buttons">
+                            <a href="https://www.rarlab.com/download.htm" class="btn-patch winrar" target="_blank">DOWNLOAD WINRAR</a>
+                            <a href="https://www.7-zip.org/download.html" class="btn-patch mediafire" target="_blank">DOWNLOAD 7ZIP</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Step #4: Launching Game -->
+                    <div class="step-container">
+                        <h2 id="step4Title" class="step-title">04. UPDATE & MAINKAN GAME</h2>
+                        <p id="step4Description" class="step-description">Jalankan patcher.exe dari folder yang sudah diekstrak. Patcher akan memeriksa update, dan jika diperlukan, client akan diperbarui secara otomatis. Setelah itu, Anda dapat login ke game.</p>
+                    </div>
+            </div>     
+
+            <!-- Patch Tab Content -->
+            <div class="tab-pane" id="patch">
+                <h1 id="manualPatchTitle" class="guide-title">CARA PATCH MANUAL</h1>
+                <p id="manualPatchStep1" class="desc-page">1. Ekstrak file patch yang telah kamu download</p>
+                <p id="manualPatchStep2" class="desc-page">2. Login Melalui Patcher.exe</p>
+                <p id="manualPatchStep3" class="desc-page">3. Setelah update selesai, klik ikon Start untuk mulai bermain.</p>
+
+                <div class="patch-section">
+                    <div class="patch-image">
+                        <img src="/img/patch.jpg" alt="Gambar Patch">
+                    </div>
+                    <div class="patch-details">
+                        <h2 id="patchClientTitle1">Patch Untuk Client Versi Dasar 1.4.6</h2>
+                        <p><span class="info-title" id="patchDate">Tanggal: </span>15 Oktober 2024</p>
+                        <p><span class="info-title" id="patchSize">Ukuran: </span>5 GB</p>
+                        <p><span class="info-title" id="patchDescription">Deskripsi: </span>Patch khusus untuk pengguna yang sudah memiliki Client Berbasis 1.4.6</p>
+                        <p><span class="info-title" id="patchImportantInfo">Info Penting: </span>TIDAK DISARANKAN MENGGUNAKAN PATCH INI SAJA (Opsional), JIKA DIGUNAKAN SEBELUM TANGGAL TERSEBUT, CLIENT PW ANDA AKAN RUSAK</p>
+                        
+                        <div class="patch-buttons">
+                            <a href="https://drive.google.com/file/d/1UzbUCtM36y1gjN6mV0gpbGc-rA3Oj0ge/view?usp=sharing" class="btn-patch google-drive">Google Drive</a>
+                            <a href="#" class="btn-patch direct-download" id="directDownload">Download Langsung</a>
+                            <a href="#" class="btn-patch mediafire">MediaFire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="patch-section">
+                    <div class="patch-image">
+                        <img src="/img/patch.jpg" alt="Gambar Patch">
+                    </div>
+                    <div class="patch-details">
+                        <h2 id="patchClientTitle2">Patch Untuk Client Versi Dasar 1.5.1 - 1.5.5</h2>
+                        <p><span class="info-title" id="patchDate">Tanggal: </span>15 Oktober 2024</p>
+                        <p><span class="info-title" id="patchSize">Ukuran: </span>300 Mb</p>
+                        <p><span class="info-title" id="patchDescription">Deskripsi: </span>Patch khusus untuk pengguna yang sudah memiliki Client Berbasis 1.5.1 - 1.5.5</p>
+                        <p><span class="info-title" id="patchImportantInfo">Info Penting: </span>TIDAK DISARANKAN MENGGUNAKAN PATCH INI SAJA (Opsional), JIKA DIGUNAKAN SEBELUM TANGGAL TERSEBUT, CLIENT PW ANDA AKAN RUSAK</p>
+                        
+                        <div class="patch-buttons">
+                            <a href="https://drive.google.com/file/d/1ZQyKsrhcBjLd7xLWoKlhMfZlsUPrT6BT/view?usp=sharing" class="btn-patch google-drive">Google Drive</a>
+                            <a href="#" class="btn-patch direct-download" id="directDownload">Download Langsung</a>
+                            <a href="#" class="btn-patch mediafire">MediaFire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="site-footer"> 
+    <div class="scroll-up-container">
+            <button class="scroll-up-btn" onclick="scrollToTop()">
+                <img src="/img/btn_top.png" alt="Scroll to Top">
+            </button>
+    </div>
+    <nav class="footer-menu">
+        <ul class="menu-footer">
+            <li class="no-icon"><a href="http://pwexe.id/" id="footer-home">Beranda</a></li>
+            <li class="always-active"><a href="/download.html" id="footer-download">Download</a></li>
+            <li><a href="https://panel.pwexe.id/register" id="footer-register">DAFTAR</a></li>
+            <li><a href="/about.html" id="footer-about">Tentang Server</a></li>
+            <li><a href="#" id="footer-support">Bantuan</a></li>
+            </ul>
+        </nav>
+    <div class="footer-copyright">
+        <div class="copyright-info">
+            <div class="age-rating">
+                <span>16</span>
+            </div>
+            <div class="copyright-text">
+                <p id="footer-copyright">Copyright © 2024 Perfect World EXE</p>
+                <p id="footer-info">Website ini dibuat untuk tujuan informasi. Semua hak dimiliki oleh pemiliknya masing-masing.</p>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+<!-- Last Footer -->
+<footer class="last-footer">
+    <div class="footer-bottom">
+        <nav>
+            <ul class="footer-last">
+                <li class="no-icon"><a href="#user-agreement" id="footer-user">Perjanjian Pengguna</a></li>
+                <li><a href="#privacy-policy" id="footer-privacy">Kebijakan Privasi</a></li>
+                <li>
+                    <a href="https://www.instagram.com/pwexe.id" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@pwexe.id" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://discord.gg/pwexe" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                </li>
+                </ul>
+            </nav>
+        <div class="footer-copy"></div>
+    </div>
+</footer>
+
+<!-- Javascript -->
+<script src="js/script.js?v=2.2"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> <!--Language-->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tabItems = document.querySelectorAll('.tab-item');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+    function removeActiveClasses() {
+        tabItems.forEach(item => item.classList.remove('active'));
+        tabPanes.forEach(pane => pane.classList.remove('active'));
+    }
+    function activateTab(tabId) {
+        document.getElementById(tabId).classList.add('active');
+    }
+    tabItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const tabId = this.getAttribute('data-tab');
+            removeActiveClasses();
+            this.classList.add('active');
+            activateTab(tabId);
+        });
+    });
+});
+</script>
+</body>
+</html>
