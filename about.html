@@ -7,8 +7,8 @@
     <title>Perfect World</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css?v=3.5">
-    <link rel="icon" href="/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css?v=3.5">
+    <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
     
@@ -29,17 +29,17 @@
                         <li><a href="#" id="menu-support">Bantuan</a></li>
                         <li>
                             <button class="btn dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img id="currentFlag" src="/img/flag_id.png" alt="ID" class="me-1"> <span id="currentLanguage">ID</span>
+                                <img id="currentFlag" src="img/flag_id.png" alt="ID" class="me-1"> <span id="currentLanguage">ID</span>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="languageDropdown">
                                 <li class="nav-item no-icon">
                                     <a class="dropdown-item" onclick="setLanguage('id')">
-                                        <img src="/img/flag_id.png" alt="ID" class="me-1"> Indonesia
+                                        <img src="img/flag_id.png" alt="ID" class="me-1"> Indonesia
                                     </a>
                                 </li>
                                 <li class="nav-item no-icon">
                                     <a class="dropdown-item" onclick="setLanguage('en')">
-                                        <img src="/img/flag_en.png" alt="EN" class="me-1"> English
+                                        <img src="img/flag_en.png" alt="EN" class="me-1"> English
                                     </a>
                                 </li>
                             </ul>
@@ -47,7 +47,7 @@
     
                         <!-- Tombol Register dan Login di dalam menu mobile -->
                         <li class="mobile-auth-buttons no-icon ">
-                            <a href="https://panel.pwexe.id/login" class="login-btn-mob"><img src="/img/icon_lock.png" alt="Lock Icon"><span id="login-btn-mob">MASUK</span></a>
+                            <a href="https://panel.pwexe.id/login" class="login-btn-mob"><img src="img/icon_lock.png" alt="Lock Icon"><span id="login-btn-mob">MASUK</span></a>
                         </li>
                         <li class="mobile-auth-buttons no-icon">
                             <a href="https://panel.pwexe.id/register" class="register-btn-mob" id="register-btn-mob">DAFTAR</a>
@@ -61,7 +61,7 @@
                 </div>
 
                 <span class="desktop-auth-buttons"> <!-- Kontainer untuk tombol -->
-                    <a href="https://panel.pwexe.id/login" class="login-btn-desk"><img src="/img/icon_lock.png" alt="Lock Icon"><span id="login-btn-desk">MASUK</span></a>
+                    <a href="https://panel.pwexe.id/login" class="login-btn-desk"><img src="img/icon_lock.png" alt="Lock Icon"><span id="login-btn-desk">MASUK</span></a>
                     <a href="https://panel.pwexe.id/register" id="register-btn-desk" class="register-btn-desk">DAFTAR</a>
                 </span>
             </ul>
@@ -72,7 +72,7 @@
 <section class="about-container-besar">
 <div class="about-container">
     <div class="character-display">
-        <img id="fullCharacter" src="/img/krk1.webp" alt="Full Character" class="full-character">
+        <img id="fullCharacter" src="img/krk1.webp" alt="Full Character" class="full-character">
         <div class="character-description">
             <h2 id="characterName">Mage</h2>
             <p id="characterHometown"><span class="desc-title">Kota Kelahiran: </span>Kota Pedang</p>
@@ -92,8 +92,8 @@
 <section class="thumbnail-container">
     <!-- Thumbnail section -->
     <div class="character-thumbnails">
-        <img src="/img/krk1-t.webp" alt="Jian Ling" onclick="updateCharacter(
-            '/img/krk1.webp', 
+        <img src="img/krk1-t.webp" alt="Jian Ling" onclick="updateCharacter(
+            'img/krk1.webp', 
             'Mage', 
             'Kota Pedang', 
             'Magic', 
@@ -104,8 +104,8 @@
             'Mage. Mengkhususkan diri dalam mantra kerusakan berat. Ini menggunakan unsur-unsur alam: api, air dan tanah. Damage dapat ditangani dalam berbagai bentuk sesuai dengan elemen yang dipilih dan memiliki damage terkuat dalam game.'
         )" class="thumbnail">
         
-        <img src="/img/krk2-t.webp" alt="Hun Ling" onclick="updateCharacter(
-            '/img/krk2.webp', 
+        <img src="img/krk2-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            'img/krk2.webp', 
             'Mystic', 
             'Kota Tellus', 
             'Magic', 
@@ -116,8 +116,8 @@
             'Kelas sihir yang memberimu banyak keterampilan yang merusak kayu beserta keterampilan penyembuhan untuk membantumu dan sekutumu. Mystics akan secara bertahap mendapatkan tanaman untuk membantumu dalam pertempuran saat kamu naik level. Setiap tanaman digunakan untuk tujuan yang unik, seperti memberikan kerusakan, debuff AoE, menyembuhkan rekan setim, dan bahkan lebih banyak pilihan saat membuka Glyph.'
         )" class="thumbnail">
 
-        <img src="/img/krk3-t.webp" alt="Hun Ling" onclick="updateCharacter(
-            '/img/krk3.webp', 
+        <img src="img/krk3-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            'img/krk3.webp', 
             'Seeker', 
             'Kota Tellus', 
             'Physical', 
@@ -128,8 +128,8 @@
             'Membawa peninggalan di dahi mereka. Seeker memfokuskan energi Ibu Bumi melalui bentuk pedang fana untuk menjadi petarung serbaguna. Ini memungkinkan dia untuk menyerang dari jarak pendek dan menengah. Jian Ling juga dapat menggunakan Bladesongs dan Bladesight untuk meningkatkan kemampuannya dan menyebabkan efek status khusus pada musuh. Dan tank sekunder yang mereka unggulkan dalam pertempuran efek area yang luas.'
         )" class="thumbnail">
 
-        <img src="/img/krk4-t.webp" alt="Hun Ling" onclick="updateCharacter(
-            '/img/krk4.webp', 
+        <img src="img/krk4-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            'img/krk4.webp', 
             'Physic', 
             'Kota Samudra', 
             'Magic', 
@@ -140,8 +140,8 @@
             'Dapat berubah menjadi bentuk Duyung. Physic dukun, adalah kelas Tideborne kuno. Mereka tidak lagi mengejar penguasaan elemen, tetapi sekarang memanipulasi esensi naluri makhluk. Mereka memanifestasikan keinginan mereka melalui Roh untuk meningkatkan diri mereka sendiri dan sekutu mereka sambil menyakiti musuh mereka dan memiliki kekuatan untuk memanggil.'
         )" class="thumbnail">
 
-        <img src="/img/krk5-t.webp" alt="Hun Ling" onclick="updateCharacter(
-            '/img/krk5.webp', 
+        <img src="img/krk5-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            'img/krk5.webp', 
             'Warrior', 
             'Kota Pedang', 
             'Physical', 
@@ -152,8 +152,8 @@
             'Menggunakan berbagai senjata. Warior,Lambang penguasaan senjata. Memberikan kerusakan fisik terus menerus dengan menukar berbagai senjata. Mereka juga pandai memukau dan melemahkan mangsanya dan memiliki tubuh yang kuat untuk mengatasi kerusakan.'
         )" class="thumbnail">
 
-        <img src="/img/krk6-t.webp" alt="Hun Ling" onclick="updateCharacter(
-            '/img/krk6.webp', 
+        <img src="img/krk6-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            'img/krk6.webp', 
             'Archer', 
             'Kota Peri', 
             'Ranged Physical', 
@@ -164,8 +164,8 @@
             'Bisa terbang sejak lahir. Memberikan kerusakan jarak jauh yang berat pada jarak maksimum. Archer Pemanah, adalah perwujudan angin, armada kaki, dan tangan yang pasti. Sebagai penjaga Wingkin, dia adalah pemanah yang luar biasa dan pejuang pemberani. Indranya diasah hingga tajam, memungkinkannya untuk menyerang lawan dari jarak jauh dan menyebabkan efek melemahkan untuk menghambat kemajuan mereka.'
         )" class="thumbnail">
 
-        <img src="/img/krk7-t.webp" alt="Hun Ling" onclick="updateCharacter(
-            '/img/krk7.webp', 
+        <img src="img/krk7-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            'img/krk7.webp', 
             'Assasin', 
             'Kota Samudra', 
             'Physical', 
@@ -176,8 +176,8 @@
             'Dapat berubah menjadi bentuk air. Serangan dari bayang-bayang, belati di belakang, dan mundur diam-diam adalah merek dagang dari Assasin. Orang-orang seperti itu bukanlah petarung jarak dekat yang kasar, tetapi ahli kemahiran. Mereka lebih suka mengandalkan kelincahan daripada baju besi besar. Selain akurasinya yang tepat, Xi Shou menggunakan siluman alami untuk keuntungannya. Sebagian besar korbannya tidak memperhatikannya sampai mereka menghembuskan napas terakhir.'
         )" class="thumbnail">
 
-        <img src="/img/krk8-t.webp" alt="Hun Ling" onclick="updateCharacter(
-            '/img/krk8.webp', 
+        <img src="img/krk8-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            'img/krk8.webp', 
             'Foxlady', 
             'Kota Siluman', 
             'Magic', 
@@ -188,8 +188,8 @@
             'Seorang ahli sihir Kayu, dia dapat memanggil serangga dan wabah, menggunakan racun dan kutukan, dan berubah menjadi rubah atau binatang jinak.'
         )" class="thumbnail">
 
-        <img src="/img/krk9-t.webp" alt="Hun Ling" onclick="updateCharacter(
-            '/img/krk9.webp', 
+        <img src="img/krk9-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            'img/krk9.webp', 
             'Bestial',
             'Kota Siluman', 
             'Physical', 
@@ -200,8 +200,8 @@
             'Bestial adalah karakter tank yang dapat menahan kerusakan tinggi, menggabungkan kekuatan dan ketahanan binatang buas, dan memiliki kecerdasan dan perhitungan manusia. Ketika kekuatan binatang terbangun, mereka dapat berubah menjadi harimau putih atau panda, meningkatkan kekuatan dan kecepatan mereka.'
         )" class="thumbnail">
 
-        <img src="/img/krk10-t.webp" alt="Hun Ling" onclick="updateCharacter(
-            '/img/krk10.webp', 
+        <img src="img/krk10-t.webp" alt="Hun Ling" onclick="updateCharacter(
+            'img/krk10.webp', 
             'Priest', 
             'Kota Siluman', 
             'Magic', 
@@ -276,7 +276,7 @@
 <footer class="site-footer"> 
     <div class="scroll-up-container">
             <button class="scroll-up-btn" onclick="scrollToTop()">
-                <img src="/img/btn_top.png" alt="Scroll to Top">
+                <img src="img/btn_top.png" alt="Scroll to Top">
             </button>
     </div>
     <nav class="footer-menu">
