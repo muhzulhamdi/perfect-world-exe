@@ -6,7 +6,7 @@ function loadLocalVideo() {
     videoContainer.style.display = 'block';
     
     videoContainer.innerHTML = '<video controls autoplay style="width: 100%; height: auto; position: absolute; top: 29px; left: 0;">' +
-                               '<source src="/img/Teaser.mp4" type="video/mp4">' +
+                               '<source src="../img/Teaser.mp4" type="video/mp4">' +
                                'Your browser does not support the video tag.' +
                                '</video>';
 }
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", async function(event){
             }
             dataTopUp.data.map( (data, index) => {
                 topSpenders.innerHTML +=  `<div class="discussion-item">
-                    <img src="/img/avatar1.png" alt="Profile" class="profile-pic">
+                    <img src="../img/avatar1.png" alt="Profile" class="profile-pic">
                    <div class="discussion-content" style="display:flex;justify-content:space-between;align-items: center;">
                         <p class="discussion-title">${data.name}</p>
                         <span style="color:#ecb95d">${data.total}</span>
