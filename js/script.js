@@ -11,6 +11,15 @@ function loadLocalVideo() {
                                '</video>';
 }
 
+function loadOnlineVideo() {
+    document.getElementById('thumbnail').style.display = 'none';
+
+    var videoContainer = document.getElementById('video');
+    videoContainer.style.display = 'block';
+    
+    videoContainer.innerHTML = '<iframe src="https://drive.google.com/file/d/1G55NSQSVLuuMU7CEmTzNnOuQ1LnY3eHx/preview" width="100%" height="315" allow="autoplay"></iframe>';
+}
+
 // Dynamic Data 
 const baseUrl = 'https://panel.pwexe.id/api/';
 const totalOnline = document.getElementById('server-status');
