@@ -66,7 +66,7 @@ body {
 
 .menu li {
     list-style-type: none; /* Hilangkan bullet list bawaan */
-    background-image: url('img/dot.png'); /* Ganti dengan path gambar Anda */
+    background-image: url('//img/dot.png'); /* Ganti dengan path gambar Anda */
     background-size: 14px 14px; /* Sesuaikan ukuran gambar */
     background-repeat: no-repeat;
     background-position: 16px center; /* Atur jarak ikon dari kiri */
@@ -111,7 +111,7 @@ body {
     justify-content: center;
     width: 190px;
     height: 60px;
-    background-image: url('img/btn_register.png');
+    background-image: url('//img/btn_register.png');
     background-size: cover;
     background-position: center;
     background-color: transparent;
@@ -176,7 +176,7 @@ body {
     justify-content: center;
     width: 300px;
     height: 60px;
-    background-image: url('img/btn_register.png');
+    background-image: url('//img/btn_register.png');
     background-size: cover;
     background-position: center;
     background-color: transparent;
@@ -400,7 +400,7 @@ body {
         width: 100%; /* Tombol penuh lebar */
         max-width: 220px; /* Maksimal lebar tombol */
         height: 60px;
-        background-image: url('img/btn_register.png');
+        background-image: url('/img/btn_register.png');
         background-size: cover;
         background-position: center;
         color: var(--color1);
@@ -700,7 +700,7 @@ body {
 }
 
 .start-game {
-    background-image: url('img/bg_start.png');
+    background-image: url('/img/bg_start.png');
     background-size: contain;
     background-position: center;
     width: 100%;
@@ -726,7 +726,7 @@ body {
 
 
 .server-status {
-    background-image: url('img/bg_status_online.png'); 
+    background-image: url('/img/bg_status_online.png'); 
     background-size: contain;
     background-position: center;
     width: 100%;
@@ -957,7 +957,7 @@ body {
     transform: translateX(-50%);
     width: 130%;
     height: 1096px;
-    background-image: url('img/bg_light.png'); 
+    background-image: url('/img/bg_light.png'); 
     background-size: auto; /* Atur agar gambar berulang secara otomatis */
     background-repeat: repeat-x; /* Ulangi gambar horizontal (X axis) */
     background-position: top center; 
@@ -1082,7 +1082,7 @@ body {
 
 
 #news-list li:hover {
-    background-image: url('img/high_forum.png'); /* Background hover dengan gambar */
+    background-image: url('/img/high_forum.png'); /* Background hover dengan gambar */
     background-size: cover;
     padding: 16px 8px 16px 8px; /* Maintain padding for consistency */
     margin-bottom: 10px;
@@ -1161,7 +1161,7 @@ body {
 }
 
 .news-archive-btn:hover {
-    background-image: url('img/bg_archive_news.png'); 
+    background-image: url('/img/bg_archive_news.png'); 
     opacity: 0.9;
 }
 
@@ -1365,7 +1365,7 @@ body {
     width: 100%;
     max-width: 600px;
     margin: 0px;
-    background-image: url('img/bg_topplayer.png'); 
+    background-image: url('/img/bg_topplayer.png'); 
     background-size: cover;
     background-position: center;
     padding: 24px;
@@ -1414,7 +1414,7 @@ body {
 }
 
 .top-players-table tbody tr:hover {
-    background-image: url('img/hover_table.png'); 
+    background-image: url('/img/hover_table.png'); 
     background-size: cover;
     background-position: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.362);
@@ -1459,14 +1459,14 @@ body {
 }
 
 .discord-btn {
-    background-image: url('img/bg_discord.jpg');
+    background-image: url('/img/bg_discord.jpg');
     background-size: cover;
     transition: background-color 0.3s ease;
     transition: transform 0.3s ease;
 }
 
 .telegram-btn {
-    background-image: url('img/bg_telegram.jpg');
+    background-image: url('/img/bg_telegram.jpg');
     background-size: cover;
     transition: background-color 0.3s ease;
     transition: transform 0.3s ease;
@@ -1495,7 +1495,7 @@ body {
     color: white;
     font-size: 24px;
     font-weight: 500;
-    background-image: url('img/bg_discussion.png');
+    background-image: url('/img/bg_discussion.png');
     background-size: cover;
     background-position: center;
     margin-bottom: 32px;
@@ -1511,7 +1511,7 @@ body {
 }
 
 .discussion-item:hover{
-    background-image: url('img/high_forum.png');
+    background-image: url('/img/high_forum.png');
     background-size: cover;
     padding: 16px 8px 16px 8px;
     margin-bottom: 10px;
@@ -1563,7 +1563,7 @@ body {
 }
 
 .highlighted {
-    background-image: url('img/high_forum.png');
+    background-image: url('/img/high_forum.png');
     background-size: cover;
     padding: 16px;
     border-radius: 8px;
@@ -1579,7 +1579,7 @@ body {
 
 .visit-forum-btn {
     position: relative; 
-    background-image: url('img/btn_visit.png');
+    background-image: url('/img/btn_visit.png');
     background-size: cover; 
     color: #fff;
     text-align: center;
@@ -1605,7 +1605,7 @@ body {
     transform: translate(-50%, -50%);
     width: 546px;
     height: 29px;
-    background-image: url('img/bg_btn_visit.png'); 
+    background-image: url('/img/bg_btn_visit.png'); 
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
@@ -1914,7 +1914,7 @@ body {
     width: 800px;
     max-width: 877px;
     height: 231px;
-    background-image: url('img/light_btn_top.png');
+    background-image: url('/img/light_btn_top.png');
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1; 
@@ -1941,7 +1941,7 @@ body {
 
 .menu-footer li {
     list-style-type: none; /* Hilangkan bullet list bawaan */
-    background-image: url('img/dot.png'); /* Ganti dengan path gambar Anda */
+    background-image: url('/img/dot.png'); /* Ganti dengan path gambar Anda */
     background-size: 14px 14px; /* Sesuaikan ukuran gambar */
     background-repeat: no-repeat;
     background-position: 16px center; /* Atur jarak ikon dari kiri */
@@ -2352,7 +2352,7 @@ body {
     width: 100px;
     height: 13px;
     top:4px;
-    background-image: url('img/logo_footer.png');
+    background-image: url('/img/logo_footer.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 999;
@@ -2502,7 +2502,7 @@ body {
 }
 
 .banner-container-kecil {
-    background-image: url('img/banner.jpg');
+    background-image: url('/img/banner.jpg');
     background-size: cover;
     background-position: bottom center;
     position: relative;
@@ -2517,7 +2517,7 @@ body {
     top: -200px; 
     width: 100%;
     height: 1096px;
-    background-image: url('img/bg_light.png'); 
+    background-image: url('/img/bg_light.png'); 
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: top center; 
@@ -2651,7 +2651,7 @@ body {
     color: #312923;
     margin:24px auto 0px auto;
     padding: 24px 0px 0px 32px;
-    background-image: url('img/bg_topplayer.png'); 
+    background-image: url('/img/bg_topplayer.png'); 
     background-size: cover;
     background-position: center;
     font-size: 16px;
@@ -2689,7 +2689,7 @@ body {
 }
 
 .btn-download {
-    background: url('img/btn_download1.png') no-repeat center;
+    background: url('/img/btn_download1.png') no-repeat center;
     background-size: cover;
     display: inline-flex; 
     align-items: center;
@@ -2703,7 +2703,7 @@ body {
 }
 
 .btn-guide {
-    background: url('img/btn_download2.png') no-repeat center;
+    background: url('/img/btn_download2.png') no-repeat center;
     background-size: cover;
     display: inline-flex; 
     align-items: center;
@@ -3047,7 +3047,7 @@ body {
     justify-content: center;
     width: 235px;
     height: 80px;
-    background-image: url('img/btn_register.png');
+    background-image: url('/img/btn_register.png');
     background-size: cover;
     background-position: center;
     background-color: transparent;
@@ -3568,7 +3568,7 @@ body {
 }
 
 .about-container-besar {
-    background-image: url('img/banner.jpg');
+    background-image: url('/img/banner.jpg');
     background-size: cover;
     background-position:bottom;
     position: relative;
@@ -3638,7 +3638,7 @@ body {
     max-width: 60%;
     padding: 40px 24px 40px 24px;
     margin: 60px 70px 0px -320px;
-    background-image: url('img/bg_topplayer.png'); 
+    background-image: url('/img/bg_topplayer.png'); 
     background-size: cover;
     background-position: center;
     max-height: 100%;
