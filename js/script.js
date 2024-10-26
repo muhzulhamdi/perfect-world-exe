@@ -282,6 +282,8 @@ function updateCharacter(fullImageUrl, name, hometown, type, attribute, elements
     document.getElementById('characterDescription').innerHTML = '<strong>Karakteristik Khusus:</strong> ' + description;
 }
 
+
+
 // Pilih semua elemen dengan kelas 'fade-in-section'
 const faders = document.querySelectorAll('.fade-in-section');
 

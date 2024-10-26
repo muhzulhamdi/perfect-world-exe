@@ -1,0 +1,73 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "en": {
+        "characterName": "Mage",
+        "characterHometown": "Sword City",
+        "characterType": "Magic",
+        "characterAttribute": "Intelligence",
+        "characterElements": "Earth, Fire, Water",
+        "characterWeapons": "Flag, Mystic Sword, Wheel, Wand",
+        "characterArmor": "Mystic Armor",
+        "characterDescription": "Mage. Specializes in heavy damage spells. It uses the elements of nature: fire, water, and earth. Damage can be dealt in various forms according to the chosen element and has the strongest damage in the game."
+      },
+      "id": {
+        "characterName": "Mage",
+        "characterHometown": "Kota Pedang",
+        "characterType": "Magic",
+        "characterAttribute": "Intelligence",
+        "characterElements": "Tanah, Api, Air",
+        "characterWeapons": "Bendera, Pedang Mistik, Roda, Tongkat",
+        "characterArmor": "Armor Mistik",
+        "characterDescription": "Mage. Mengkhususkan diri dalam mantra kerusakan berat. Ini menggunakan unsur-unsur alam: api, air, dan tanah. Damage dapat ditangani dalam berbagai bentuk sesuai dengan elemen yang dipilih dan memiliki damage terkuat dalam game."
+      }
+    },
+    {
+      "id": 2,
+      "en": {
+        "characterName": "Mystic",
+        "characterHometown": "Tellus City",
+        "characterType": "Magic",
+        "characterAttribute": "Intelligence",
+        "characterElements": "Wood, Metal (summon), Fire (summon)",
+        "characterWeapons": "Wheel, Flag, Mystic Sword, Wand",
+        "characterArmor": "Mystic Armor",
+        "characterDescription": "A magic class that gives you many wood-damage skills and healing skills to aid you and your allies. Mystics gradually gain plants to assist in battle as you level up. Each plant serves a unique purpose, such as dealing damage, AoE debuffing, healing teammates, and even more options when unlocking Glyph."
+      },
+      "id": {
+        "characterName": "Mystic",
+        "characterHometown": "Kota Tellus",
+        "characterType": "Magic",
+        "characterAttribute": "Intelligence",
+        "characterElements": "Kayu, Logam (panggilan), Api (panggilan)",
+        "characterWeapons": "Roda, Bendera, Pedang Mistik, Tongkat",
+        "characterArmor": "Armor Mistik",
+        "characterDescription": "Kelas sihir yang memberimu banyak keterampilan yang merusak kayu beserta keterampilan penyembuhan untuk membantumu dan sekutumu. Mystics akan secara bertahap mendapatkan tanaman untuk membantumu dalam pertempuran saat kamu naik level. Setiap tanaman digunakan untuk tujuan yang unik, seperti memberikan kerusakan, debuff AoE, menyembuhkan rekan setim, dan bahkan lebih banyak pilihan saat membuka Glyph."
+      }
+    },
+    {
+      "id": 3,
+      "en": {
+        "characterName": "Seeker",
+        "characterHometown": "Tellus City",
+        "characterType": "Physical",
+        "characterAttribute": "Strength",
+        "characterElements": "Metal",
+        "characterWeapons": "Blade, Dual Blades, Dual Swords, Sword",
+        "characterArmor": "Heavy Armor",
+        "characterDescription": "Bears relics on their foreheads. Seeker focuses the energy of Mother Earth through the form of mortal swords to become versatile fighters. This allows them to strike from short and mid-range distances. Jian Ling can also use Bladesongs and Bladesight to enhance their abilities and cause special status effects on enemies. A secondary tank, they excel in wide area-effect battles."
+      },
+      "id": {
+        "characterName": "Seeker",
+        "characterHometown": "Kota Tellus",
+        "characterType": "Physical",
+        "characterAttribute": "Strength",
+        "characterElements": "Logam",
+        "characterWeapons": "Pedang, Dual Blades, Dual Swords, Pedang",
+        "characterArmor": "Armor Berat",
+        "characterDescription": "Membawa peninggalan di dahi mereka. Seeker memfokuskan energi Ibu Bumi melalui bentuk pedang fana untuk menjadi petarung serbaguna. Ini memungkinkan dia untuk menyerang dari jarak pendek dan menengah. Jian Ling juga dapat menggunakan Bladesongs dan Bladesight untuk meningkatkan kemampuannya dan menyebabkan efek status khusus pada musuh. Dan tank sekunder yang mereka unggulkan dalam pertempuran efek area yang luas."
+      }
+    }
+  ]
+}

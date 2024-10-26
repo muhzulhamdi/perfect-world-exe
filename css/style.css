@@ -510,7 +510,6 @@ body {
 .logo-character-wrapper {
     max-width: 1200px; 
     margin: 0 auto;
-    margin-top: -24px; /* Sesuaikan ini dengan tinggi navbar Anda */ 
     padding: 0px; 
     display: flex;
     justify-content: space-between;  
@@ -519,10 +518,15 @@ body {
 
 .banner-container {
     position: relative;
-    height: auto;
     width: 100%;
-    margin: 0px;
+    height: auto;
+    margin: 0;
     z-index: 1;
+    background-image: url('../img/bg_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 70px;
 }
 
 .banner-background img {
@@ -530,12 +534,12 @@ body {
     height: 100%;
     object-fit: cover;
     position: absolute;
-    margin: 80px 0 0 0;
+    margin: 70px 0 0 0;
     z-index: 1;
 }
 
 .logo-character {
-    padding-top: 180px;
+    padding-top: 80px;
     position: relative;
     z-index: 2;
     display: flex;
@@ -568,25 +572,42 @@ body {
     width: 100%; 
     max-width: 1062px; 
     margin-left: -78px;
-    animation: idleAnimation 4s infinite ease-in-out; /* Animasi idle */
+    animation: float2 10s ease-in-out infinite;
+}
+
+@keyframes float2 {    
+    0% {
+        transform: translatey(0px) translateX(0px);
+    }
+
+    50% {
+        transform: translatey(10px) translateX(-10px);
+    }
+    100% {
+        transform: translatey(0px) translateX(0px);
+    }
 }
 
 @keyframes idleAnimation {
     0% {
         transform: translateY(0);
+        transform: translateX(0);
     }
     50% {
         transform: translateY(-10px); /* Karakter naik sedikit */
+        transform: translateX(-4px); /* Karakter naik sedikit */
+        transform: translate(-10px -5px);
     }
     100% {
         transform: translateY(0); /* Kembali ke posisi awal */
+        transform: translateX(0);
     }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
     .banner-container {
         width: 100%;
-        margin: -16px 0 0 0;
+        margin: 16px;
         padding: 0px;
         display: flex;
         overflow: hidden;
@@ -635,7 +656,7 @@ body {
 
     .banner-container {
         height: auto;
-        margin:0px;
+        margin:8px;
         padding: 0px;
         
     }
@@ -2507,13 +2528,13 @@ body {
     position: relative;
     margin-top: -30px;
     z-index: 1;
-    height: 600px; /* Berikan ukuran untuk memastikan terlihat */
+    height: 616px; /* Berikan ukuran untuk memastikan terlihat */
 }
 
 .banner-container-kecil::before {
     content: '';
     position: absolute;
-    top: -200px; 
+    top: -210px; 
     width: 100%;
     height: 1096px;
     background-image: url('../img/bg_light.png'); 
@@ -2536,20 +2557,21 @@ body {
 
 .logo-kecil {
     width: 100%;  
-    max-width: 300px;  
-    margin: -250px 0 0 0;
+    max-width: 315px;  
+    margin: -615px -188px 0 -326px;
+    z-index: 2;
 }
 
 .karakter-kecil1 {
     width: 100%;  
-    max-width: 700px;  
-    margin: -76px -100px 0px -200px;  
+    max-width: 800px;  
+    margin: -84px -400px -10px -120px;  
 }
 
 .karakter-kecil2 {
     width: 100%;  
-    max-width: 700px;  
-    margin: -60px -100px 0px -130px;  
+    max-width: 800px;  
+    margin: -90px -90px 0px -566px;  
 }
 
 /* Tab Menu Styling */
@@ -3097,26 +3119,27 @@ body {
 
     .karakter-kecil1 {
         width: 100%;  
-        max-width: 500px;  
-        margin: 0px 0 0px -95px;  
+        max-width: 600px;  
+        margin: -55px 0px 0px -100px;  
     }
     
     .karakter-kecil2 {
         width: 100%;  
-        max-width: 500px;  
-        margin: -12px -32px 0px -130px;  
+        max-width: 600px;  
+        margin: -50px -127px 0px -284px;  
     }
 
     .banner-container-kecil {
         position: relative;
         margin-top: -20px; 
         z-index: 1;
+        height: 550px;
     }
 
     .banner-container-kecil::before {
         content: '';
         position: absolute;
-        top: -180px; 
+        top: -280px; 
         width: 100%;
         height: 1096px;
         z-index: 2;
@@ -3135,8 +3158,8 @@ body {
 
     .logo-kecil {
         width: 100%;  
-        max-width: 210px;  
-        margin: -200px 0 0 0;
+        max-width: 250px;  
+        margin: -438px 0px 0 -245px;
     }
 
     .karakter-kecil {
@@ -3368,8 +3391,8 @@ body {
 
     .logo-kecil {
         width: 100%;
-        max-width: 120px;
-        margin: -160px 0 0 24px;
+        max-width: 180px;
+        margin: -245px 0 0 -135px;
     }
 
     .karakter-kecil {
@@ -3380,14 +3403,14 @@ body {
 
     .karakter-kecil1 {
         width: 100%;  
-        max-width: 350px;  
-        margin: -30px 0 0px -91px;  
+        max-width: 415px;  
+        margin: 0px 0 0px -155px;  
     }
     
     .karakter-kecil2 {
         width: 100%;  
         max-width: 350px;  
-        margin: -36px -70px 0px -140px;  
+        margin: -30px -60px 0px -140px;  
     }
 
     .download-container {
